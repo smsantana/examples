@@ -5,3 +5,8 @@ metadata:
 spec:
   stages:
     - name: "quality-gate"
+      sequences:
+        - name: "performance"
+          tasks:
+            - name: "test"
+            - name: "evaluation"
